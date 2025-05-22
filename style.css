@@ -1,8 +1,9 @@
-body{
+html, body{
     font-family: Roboto, sans-serif;
     margin: 0%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    height: 100%;
 }
 .header{
     background-color: #1f2937; 
@@ -67,4 +68,104 @@ button.sign {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+}
+
+
+/* okay this is the content part */
+
+/* part1 */
+.content-title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.container-1{
+  background-color: inherit;
+  display: flex;
+  justify-content:center;
+  gap: 50px;
+  /* padding-bottom: 50px; */
+}
+
+.bordering{
+  border-radius: 18px;
+  border: 2px solid #3882f6;
+  padding: 20px;
+  width: 90px;
+  height: 100px
+}
+.boxx{
+  justify-items: center;
+}
+.box{
+  color: #adb1b8;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+/* part2 */
+.part2{
+ background-color:#e5e7eb;
+ padding: 150px;
+ text-align: center;
+}
+.p2text{
+  padding: 5px;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 20px;
+  color: #515a68;
+} 
+.p2name{
+  text-align: right;
+  color: #1f2937;
+}
+
+/* part3 */
+.part3{
+  background-color: inherit;
+  padding: 80px;
+}
+.blue{
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+  gap: 15rem;                 
+  height: 100px;  
+  background-color: #3882f6;           
+  border-radius: 8px;
+  padding: 1rem; 
+}
+.tight-headings h3,
+.tight-headings h4 {
+  margin: 0;
+  line-height: 1.1;
+}
+.part3-content{
+  color: #f9faf8;
+} 
+.part33-content{
+  color: #dae1ec;
+  font-weight: 100;
+}
+.btn{
+  border-radius: 20px;
+}
+
+.button2 {
+  background-color:#3882f6; 
+  color: white; 
+  border: 2px solid white ;
+}
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  background-color: #1f2937;
+}
+.footer-txt{
+  color: #c3c7d0;
+  font-weight: 300;
 }
