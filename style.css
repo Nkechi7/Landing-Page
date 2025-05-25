@@ -1,171 +1,205 @@
-html, body{
-    font-family: Roboto, sans-serif;
-    margin: 0%;
-    /* display: flex;
-    flex-direction: column; */
-    height: 100%;
-}
-.header{
-    background-color: #1f2937; 
-} 
-.header-head{
-    justify-content: center;
-    display: flex;
-    gap: 450px;
-    /* margin: 10px 100px 50px 100px; */
-} 
-.container{
-  display: flex;
-  justify-content: space-between;  
-  gap: 90px;
-  padding: 20px 120px 60px 120px;
-  /* padding:4% ;  */
-  /* max-width: 950px;
-  margin: 0 auto;                
-  padding: 1.5rem; */
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-.logo{
-   font-size: 24px;
-    color: #f9faf8;
+ body {
+     font-family: Roboto, sans-serif;
+     line-height: 1.6;
+
+ }
+
+ .container {
+     max-width: 1500px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ #header {
+   background-color: #1f2937;
+   padding-bottom: 90px;
 }
-ul {
+.nav-container,.header-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 1rem;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+   color: #f9faf8;
+} 
+.nav-menu {
   display: flex;
   list-style: none;
-  gap: 8px
-}
+  gap: 2rem;
+ }
 
-a, .hcp2{
- text-decoration: none;
- font-size: 16px;
- color: #adb1b8;
-}
+.nav-menu a {
+  color:#f9faf8;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+ }
+
+ .nav-menu a:hover {
+    opacity: 0.8;
+    color: aliceblue;
+ }
+
+button.menu-toggle {
+   display: none;
+   background: none;
+   border: none;
+   color: white;
+   font-size: 1.5rem;
+   cursor: pointer;
+  }
 
 
-.header-img{
-   /* margin-top: 100px; */
-    width: 550px;
-    height:  auto;
-    
-}
-.hcp1{
-  font-size: 45px;
-  font-weight: 900;
-  color: #f9faf8;
-  
-}
-.right{ 
-  padding-top:5%;
-}
 
+.rhs{
+     margin: 0;
+     line-height: 1.5;
+}
+.main-text{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+     line-height: 1.1;
+}
+.sub-text{
+    font-size: 18px;
+    color: #b0b2b6;
+}
+.button-div{
+  padding-top: 10px;
+}
 button {
   cursor: pointer;
-  padding: 7px 23px;
-  border-radius: 8px;
+  padding: 6px 29px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 600;
 }
 
 button.sign {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  border-radius: 10px;
+ 
 }
-
 
 /* okay this is the content part */
 
 /* part1 */
-.content-title{
+.content-title {
+  padding-top: 20px;
   text-align: center;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
 }
-
-.container-1{
+.cont-1 {
   background-color: inherit;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 50px;
-  /* padding-bottom: 50px; */
+ padding-top: 50px;
 }
 
-.bordering{
+.bordering {
   border-radius: 18px;
   border: 2px solid #3882f6;
   padding: 20px;
-  width: 90px;
-  height: 100px
+  width: 150px;
+  height: 150px
 }
-.boxx{
+
+.boxx {
   justify-items: center;
 }
-.box{
-  color: #adb1b8;
+
+.box {
+  color: #8a8b8e;
   width: 200px;
   height: 200px;
   text-align: center;
 }
 
 /* part2 */
-.part2{
- background-color:#e5e7eb;
- padding: 150px;
- text-align: center;
+.part2 {
+  background-color: #e5e7eb;
+  padding: 150px;
+  text-align: center;
 }
-.p2text{
+
+.p2text {
   padding: 5px;
-  font-weight: lighter;
   font-style: italic;
   font-size: 20px;
   color: #515a68;
-} 
-.p2name{
+}
+
+.p2name {
+  font-weight: 600;
   text-align: right;
   color: #1f2937;
 }
 
 /* part3 */
-.part3{
+.part3 {
   background-color: inherit;
   padding: 80px;
 }
-.blue{
+
+.blue {
   display: flex;
-  align-items: center;       
-  justify-content: center;   
-  gap: 15rem;                 
-  height: 100px;  
-  background-color: #3882f6;           
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  height: 100px;
+  background-color: #3882f6;
   border-radius: 8px;
-  padding: 1rem; 
+  padding: 1rem;
 }
+
 .tight-headings h3,
-.tight-headings h4 {
+.tight-headings h4,
+.hcp1 {
   margin: 0;
   line-height: 1.1;
 }
-.part3-content{
+
+.part3-content {
   color: #f9faf8;
-} 
-.part33-content{
+  font-size:24px;
+}
+
+.part33-content {
   color: #dae1ec;
   font-weight: 100;
-}
-.btn{
-  border-radius: 20px;
+  font-size: 20px;
 }
 
-.button2 {
-  background-color:#3882f6; 
-  color: white; 
-  border: 2px solid white ;
+ button.button2 {
+  background-color: #3882f6;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
 }
 
-.footer{
+
+/* footer yay! Tommorrow we shall add responsiveness to screen types cause lmaoo */
+.footer {
   padding: 20px;
   text-align: center;
   background-color: #1f2937;
 }
-.footer-txt{
+
+.footer-txt {
   color: #c3c7d0;
   font-weight: 300;
+  font-size: 17px;
 }
