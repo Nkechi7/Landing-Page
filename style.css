@@ -17,7 +17,7 @@
  }
 
  #header {
-   background-color: #1f2937;
+   background-color: #1b0033;
    padding-bottom: 90px;
 }
 .nav-container,.header-container{
@@ -76,32 +76,70 @@ button.menu-toggle {
 .button-div{
   padding-top: 10px;
 }
-button {
+button { 
+  background:#580e92;
   cursor: pointer;
+  border: none;
   padding: 6px 29px;
   border-radius: 30px;
   text-align: center;
   font-weight: 600;
+  transition: background 0.3s ease;
 }
 
+button:hover {
+  background-color: #c089ff; /* lighter purple glow */
+}
 button.sign {
-  background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
+  border: 1px solid  #c089ff;
+  color: #f3eaff; 
   border-radius: 10px;
  
-}
+} 
 
 /* okay this is the content part */
 
 /* part1 */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .content-title {
-  padding-top: 20px;
+  padding-top: 20px ;
   text-align: center;
   font-size: 25px;
   font-weight: 700;
 }
-.cont-1 {
+.image-row {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+ padding-top: 30px;       
+}
+
+.image-card {
+  width: 250px;
+  justify-content: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;   /* rounded corners */
+  border: 2px solid #ccc;
+}
+.box {
+  color: #8a8b8e;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  
+}
+
+/* .cont-1 {
   background-color: inherit;
   display: flex;
   justify-content: center;
@@ -109,28 +147,27 @@ button.sign {
  padding-top: 50px;
 }
 
-.bordering {
+.boxx {
   border-radius: 18px;
   border: 2px solid #3882f6;
   padding: 20px;
   width: 150px;
   height: 150px
+
+}
+.boxx img{
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+    margin-bottom: 16px;
 }
 
-.boxx {
-  justify-items: center;
-}
 
-.box {
-  color: #8a8b8e;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
+
 
 /* part2 */
 .part2 {
-  background-color: #e5e7eb;
+  background-color: #f3eaff;
   padding: 150px;
   text-align: center;
 }
@@ -160,7 +197,7 @@ button.sign {
   justify-content: center;
   gap: 15rem;
   height: 100px;
-  background-color: #3882f6;
+  background-color:#2d114c;
   border-radius: 8px;
   padding: 1rem;
 }
@@ -173,20 +210,20 @@ button.sign {
 }
 
 .part3-content {
-  color: #f9faf8;
+  color: #f3eaff;
   font-size:24px;
 }
 
 .part33-content {
-  color: #dae1ec;
-  font-weight: 100;
-  font-size: 20px;
+  color: #d7d1e0;
+  font-weight: 300;
+  font-size: 19px;
 }
 
  button.button2 {
-  background-color: #3882f6;
-  border: 2px solid white;
-  color: white;
+  background-color: #300c5a;
+  border: 2px solid #f3eaff;
+  color: #f3eaff;
   border-radius: 10px;
 }
 
@@ -195,7 +232,7 @@ button.sign {
 .footer {
   padding: 20px;
   text-align: center;
-  background-color: #1f2937;
+  background-color: #0a0a0a;
 }
 
 .footer-txt {
